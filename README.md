@@ -16,4 +16,4 @@ julia> faddeyeva(1, 2)
 0.2184926141618737
 ```
 
-A highly accurate version of the method is available through the `erfcx` function in [SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl), but it is slower.
+A highly accurate version of the function is available through [`erfcx`](https://specialfunctions.juliamath.org/stable/functions_list/#SpecialFunctions.erfcx) in [SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl), but it is slower.
