@@ -1,0 +1,13 @@
+name = "Faddeyeva985"
+uuid = "4e51ce9a-7ecb-4b33-a20a-6d9e1a01b2b3"
+authors = ["Mark Baum <markmbaum@protonmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
