@@ -3,6 +3,9 @@ uuid = "4e51ce9a-7ecb-4b33-a20a-6d9e1a01b2b3"
 authors = ["Mark Baum <markmbaum@protonmail.com>"]
 version = "0.1.0"
 
+[deps]
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+
 [compat]
 julia = "1"
 
