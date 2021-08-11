@@ -3,7 +3,13 @@
 [![Build Status](https://github.com/markmbaum/Faddeyeva985.jl/workflows/CI/badge.svg)](https://github.com/markmbaum/Faddeyeva985.jl/actions)
 [![codecov](https://codecov.io/gh/markmbaum/Faddeyeva985.jl/branch/main/graph/badge.svg?token=uOEvwf0hpm)](https://codecov.io/gh/markmbaum/Faddeyeva985.jl)
 
-This package exports a single function approximating the [Faddeyeva Function](https://en.wikipedia.org/wiki/Faddeeva_function) (sometimes called Faddeeva). [The algorithm](https://dl.acm.org/doi/10.1145/3119904) was developed by [Mofreh R. Zaghloul](https://cos.uaeu.ac.ae/en/departments/physics/profile.shtml?email=m.zaghloul) at the United Arab Emirates University and is translated to Julia here. It achieves relative accuracy better than 4e-5 over a wide range of arguments for the real and imaginary parts of the result.
+This package exports a single function approximating the [Faddeyeva Function](https://en.wikipedia.org/wiki/Faddeeva_function) (sometimes called Faddeeva). [The algorithm](https://dl.acm.org/doi/10.1145/3119904) was developed by [Mofreh R. Zaghloul](https://cos.uaeu.ac.ae/en/departments/physics/profile.shtml?email=m.zaghloul) at the United Arab Emirates University and is translated to Julia here. It achieves relative accuracy better than 4e-5 over a wide range of arguments for the real and imaginary parts of the result. The Faddeyeva function arises in a handful of physical problems. In particular, it is needed to evaluate the [Voigt profile](https://en.wikipedia.org/wiki/Voigt_profile) for molecular absorption lines in radiative transfer applications/modeling.
+
+If you use it for research, cite the original paper:
+
+* Mofreh R. Zaghloul. 2017. Algorithm 985: Simple, Efficient, and Relatively Accurate Approximation for the Evaluation of the Faddeyeva Function. *ACM Trans. Math. Softw.* 44, 2, Article 22 (October 2017), 9 pages. DOI: [https://doi.org/10.1145/3119904](https://doi.org/10.1145/3119904)
+
+-----
 
 The function has two methods. One takes a complex argument and returns the full complex result.
 ```julia
