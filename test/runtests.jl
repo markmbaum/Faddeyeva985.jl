@@ -13,10 +13,12 @@ function maxrelerr(x₁, x₂, nx, y₁, y₂, ny)
     xg = LinRange(x₁, x₂, nx)
     yg = 10 .^ LinRange(log10(y₁), log10(y₂), ny)
     for x ∈ xg, y ∈ yg
+
         #complex argument
         z = x + im*y
         #exact complex result
         w = wofz(z)
+        
         #985 complex result
         f = faddeyeva(z)
         #relative error of imaginary part
@@ -27,6 +29,15 @@ function maxrelerr(x₁, x₂, nx, y₁, y₂, ny)
         if ie > mie
             mie = ie
         end
+        if re > mre
+            mre = re
+        end
+
+        #985 real result
+        f = faddeyeva(x, y)
+        #relative error of real part
+        re = abs(real(w) - f)/abs(real(w))
+        #store the highest values
         if re > mre
             mre = re
         end
