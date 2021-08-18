@@ -2,7 +2,7 @@ using Faddeyeva985
 using SpecialFunctions
 using Test
 
-#computes "exact" real part of faddeyeva
+#computes nearly exact faddeyeva
 wofz(z::Complex)::Complex = erfcx(-im*z)
 
 #compute the maximum relative errors over a grid
